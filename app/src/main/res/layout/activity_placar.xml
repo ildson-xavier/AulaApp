@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacarActivity">
+
+    <TextView
+        android:id="@+id/tvTimeCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="132dp"
+        android:text="TIME CASA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlacarCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/btGolVisitante"
+        app:layout_constraintStart_toStartOf="@+id/btGolCasa"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeCasa" />
+
+    <TextView
+        android:id="@+id/tvTimeVisitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:text="TIME VISITANTE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeCasa" />
+
+    <TextView
+        android:id="@+id/tvPlacarVisitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/btGolVisitante"
+        app:layout_constraintEnd_toEndOf="@+id/btGolVisitante"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/btGolVisitante"
+        app:layout_constraintTop_toTopOf="@+id/tvPlacarCasa"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btGolCasa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Gol"
+        app:layout_constraintEnd_toStartOf="@+id/btGolVisitante"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarCasa" />
+
+    <Button
+        android:id="@+id/btGolVisitante"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Gol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btGolCasa"
+        app:layout_constraintTop_toTopOf="@+id/btGolCasa" />
+</android.support.constraint.ConstraintLayout>
